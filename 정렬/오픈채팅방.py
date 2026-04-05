@@ -2,8 +2,6 @@ def solution(record):
     answer = []
     dic = {}
     
-    
-    
     for i in record:
         log = i.split()
         command = log[0]
