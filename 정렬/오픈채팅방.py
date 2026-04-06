@@ -15,6 +15,7 @@ def solution(record):
             dic[id] = name
             # print(name)
             # 슬라이싱이 아니라 인덱스를 가져오면 그 안에 내용자체를 가져온다
+            # 슬라이싱으로 해버리면 내용자체가 아니라 전체를 가져옴 
         
     for i in record:
         log = i.split()
