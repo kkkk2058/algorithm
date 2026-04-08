@@ -19,6 +19,7 @@ def bfs(graph,x,y,n):
     count = 1
 
     #queue 전부 돌 때 while 쓰는 것 까먹지 말기
+
     while queue:
         cx,cy = queue.popleft()
         for i in range(4):
