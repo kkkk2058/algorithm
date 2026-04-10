@@ -9,7 +9,7 @@ def solution(id_list, report, k):
     # 한줄로 딕셔너리 넣기
     reported_dic = {user: 0 for user in id_list}
     
-    
+    # report 안에 내용을 2분류로 나누기 위한 방법
     for i in report:
         reporter, reported = i.split(" ")
         reported_dic[reported] +=1
