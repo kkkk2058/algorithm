@@ -17,9 +17,12 @@ queue = deque()
 
 def bfs(matrix,x,y):
     count = 0
-    cx, cy = x,y
-    queue.append((x,y))
+    matrix[x][y][z] = 0
+    queue.append((x,y,z))
     
-    for i in range(4):
-        nx  = cx + dx[i]
-    
+    while queue:
+        cx,cy,cz = queue.popleft()
+        for i in range(4):
+            nx = cx + dx[i]
+            ny = cy + dy[i]
+            nz = cz + dz[i]
