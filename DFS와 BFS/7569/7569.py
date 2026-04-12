@@ -10,9 +10,16 @@ visited = [[[False] * m for _ in range(n)] for _ in range(h)]
 
 dx = [0,0,1,-1,0,0]
 dy = [1,-1,0,0,0,0]
-dx = [0,0,0,0,1,-1]
+dz = [0,0,0,0,1,-1]
 
 queue = deque()
 
 
-def bfs:
+def bfs(matrix,x,y):
+    count = 0
+    cx, cy = x,y
+    queue.append((x,y))
+    
+    for i in range(4):
+        nx  = cx + dx[i]
+    
