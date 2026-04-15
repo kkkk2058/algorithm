@@ -25,4 +25,4 @@ def bfs(matrix,x,y):
         for i in range(4):
             nx = cx + dx[i]
             ny = cy + dy[i]
-            nz = cz + dz[i]
+            nz = cz + dz[i] 
