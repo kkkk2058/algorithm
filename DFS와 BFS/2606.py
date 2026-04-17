@@ -12,7 +12,7 @@ graph = [[] for _ in range(N+1)]
 # for i in range(N):
 #     queue.append(i+1)
 
-#[1,2,3,4,5,6,7]
+# [1,2,3,4,5,6,7]
 
 
 for i in range(S):
