@@ -45,6 +45,19 @@ for test_case in range(1, T + 1):
     N = int(sys.stdin.readline().strip())
     for i in range(N):
         money = list(map(int, sys.stdin.readline().split()))
-    print(money)
+
+    max_profit = 0
+    current = 0
+
+
+    for j in reversed(money):
+       
+        if j < max_profit:
+            current += max_profit - j
+        else:
+            max_profit = j
+
+    print(current)
+    
 #print(money)
 # total과 money 리스트를 for test_case 루프 밖에 두셨습니다. 이렇게 하면 이전 테스트 케이스의 데이터가 다음 케이스에 그대로 남아서 결과가 왜곡됩
