@@ -43,8 +43,10 @@ total = 0
 # 여러개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
 for test_case in range(1, T + 1):
     N = int(sys.stdin.readline().strip())
-    for i in range(N):
-        money = list(map(int, sys.stdin.readline().split()))
+    
+    # for i in range(N): 엔터로 받는게 아니라 띄어쓰기로 받는거니까 for문이 아니라 split으로 받는거임
+
+    money = list(map(int, sys.stdin.readline().split()))
 
     max_profit = 0
     current = 0
