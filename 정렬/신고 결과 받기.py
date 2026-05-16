@@ -6,7 +6,7 @@ def solution(id_list, report, k):
     report = set(report)
     for user in id_list:
         answer_dic[user] = 0
-    # 한줄로 딕셔너리 넣기
+    # 한줄로 딕셔너리 넣기(파이썬스러움)
     reported_dic = {user: 0 for user in id_list}
     
     # report 안에 내용을 2분류로 나누기 위한 방법
