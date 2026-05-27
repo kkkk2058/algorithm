@@ -5,6 +5,6 @@ while True:
         print("Higher")
     elif n > 25:
         print('Lower')
-    else:
+    elif n == 25:
         print('Good')
         break
